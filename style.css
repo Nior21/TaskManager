@@ -25,3 +25,28 @@ aside {
 time {
     color: #6a2cce;
 }
+
+ul {
+    position: relative;
+    list-style: none;
+    margin-left: 0;
+    padding-left: 1.2em;
+}
+
+#add:before {
+    content: "+";
+    position: absolute;
+    left: 0;
+}
+
+.del:before {
+    content: "\2714";
+    position: absolute;
+    left: 0;
+}
+
+li:not(.del):not(#add):before {
+    content: "-";
+    position: absolute;
+    left: 0;
+}
